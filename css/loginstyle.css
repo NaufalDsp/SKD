@@ -1,0 +1,80 @@
+/* Reset default margin and padding */
+body, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Style for the form table */
+table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Style for table cells */
+td {
+    padding: 10px;
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Change background color on hover */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    table {
+        width: 100%;
+    }
+}
+
+/* Style for alert messages */
+.alert {
+    color: #ff0000; /* Red color */
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ff0000; /* Red border */
+    background-color: #ffe6e6; /* Light red background */
+    border-radius: 4px;
+    max-width: 300px; /* Limit the width */
+    text-align: center; /* Center the text */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}

@@ -1,0 +1,89 @@
+root {
+    --mainColor : #252734;
+    --secondColor : #333646;
+    --acsent-color : #FF9100;
+}
+
+body {
+    background-color: #252734;
+    min-height: 900px;
+}
+section h1{
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.ubuntu-light {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* NAVBAR */
+.nav-link.active{
+    color: #FF9100 !important;
+    font-weight: 700;
+}
+/* END NAVBAR */
+
+/* SECTION HERO */
+.color-acsent{ color: #FF9100;
+}
+
+#hero {
+  color: #fff;
+  min-height: 100vh;
+}
+
+#hero h1{
+  font-size: 3.rem;
+}
+
+#hero h2{
+  font-weight: 400;
+}
+
+#hero p{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* BUTTON */
+.btn-custom1{
+  background-color: #FF9100;
+  text-align: center;
+  color: #fff;
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover{
+  box-shadow: 0 0 5px rgba(255, 166, 0, .8);
+}
+
+.cv{
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.social-icon svg{
+  margin-right: .7em;
+  margin-bottom: 10px;
+}
+/* END BUTTON */
+/* END SECTION HERO */
