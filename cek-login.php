@@ -23,7 +23,7 @@ if (isset($_SESSION['last_attempt']) && (time() - $_SESSION['last_attempt'] < $b
 
 // Retrieve the username and password from the POST request
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = md5($_POST['password']); // Hash password with MD5 (to match the stored hashed password)
 
 // Prepare the SQL statement to prevent SQL injection
 $stmt = $mysqli->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
@@ -43,9 +43,14 @@ if ($result->num_rows > 0) {
     
     // Get the user role
     $role = $aName1['role'];
-    
-    // Output the role
-    echo $role;
+
+    // Store role and username in session for further use
+    $_SESSION['username'] = $username;
+    $_SESSION['role'] = $role;
+
+    // Display a message based on the role
+    echo "Login berhasil! <br>";
+    echo "Halo, " . htmlspecialchars($username) . "! Anda login sebagai " . htmlspecialchars($role) . ".";
 } else {
     // Increment login attempt count
     $_SESSION['attempt']++;
